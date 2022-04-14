@@ -1,0 +1,79 @@
+html {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Varela', sans-serif;
+  font-size: 16px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(backgorund.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  margin-top: 100px;
+}
+
+form {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    font-size: 30px;
+}
+
+form button {
+    font-size: 35px;
+    border: 0;
+    margin-left: 20px;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+.todo-item {
+    background: #fff;
+    color: black;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+
+.trash-btn,
+.check-btn {
+    background: transparent;
+    border: 0;
+    font-size: 1rem;
+    margin-right: 10px;
+    cursor: pointer;
+    /* pointer-events: none; */
+}
+
+.check-btn {
+    color: green;
+    margin-left: 20px;
+}
+
+.trash-btn {
+    color: red;
+}
+
+.fa-trash, .fa-check {
+    pointer-events: none; 
+}
+
+.done {
+    opacity: 0.4;
+    text-decoration: line-through;
+}
